@@ -9,6 +9,7 @@ BeforeAll {
             @{ Name = 'Saturn'  }
             @{ Name = 'Uranus'  }
             @{ Name = 'Neptune' }
+            @{ Name = 'Pluto'   }
         ) | ForEach-Object { [PSCustomObject] $_ }
 
         $planets | Where-Object { $_.Name -like $Name }
