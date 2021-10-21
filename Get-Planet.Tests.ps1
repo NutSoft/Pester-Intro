@@ -18,7 +18,7 @@ BeforeAll {
 Describe 'Get-Planet' {
     It 'Given no parameters, it lists all 8 planets' {
         $allPlanets = Get-Planet
-        $allPlanets.Count | Should -Be 8
+        $allPlanets.Count | Should -Be 1
     }
 
     It 'Earth is the 3rd planet in our solar system' {
